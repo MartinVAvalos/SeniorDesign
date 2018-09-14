@@ -4,21 +4,17 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { LoginComponent } from './login/login.component';
-import { SignedInComponent } from './signed-in/signed-in.component';
-import { CyberthorityComponent } from './cyberthority/cyberthority.component';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LoginComponent,
-    SignedInComponent,
-    CyberthorityComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
