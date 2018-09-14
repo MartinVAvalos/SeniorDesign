@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
-import { HomeComponent } from './core/home/home.component';
+import { UserComponent } from './core/user/user.component';
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' }, //pathMatch overrides the default of prefix an tells angular to only redirect if the full path is empty
-  { path: 'home', component: HomeComponent },
+  { path: '', redirectTo: '/users', pathMatch: 'full' }, //pathMatch overrides the default of prefix an tells angular to only redirect if the full path is empty
+  { path: 'users', component: UserComponent },
 ];
 
 @NgModule({

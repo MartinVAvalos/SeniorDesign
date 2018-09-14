@@ -1,18 +1,22 @@
 import { NgModule } from '@angular/core';
 
 import { HeaderComponent } from './header/header.component';
-import { HomeComponent } from './home/home.component';
+import { UserComponent } from './user/user.component';
+import { UserDetailComponent } from './user/user-detail/user-detail.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    HomeComponent
+    UserComponent,
+    UserDetailComponent
   ],
   imports: [
 
   ],
   exports: [
-    HeaderComponent
+    HeaderComponent,
+    UserComponent,
+
   ],
   providers: [
 
