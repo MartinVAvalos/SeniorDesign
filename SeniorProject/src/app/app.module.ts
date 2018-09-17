@@ -4,21 +4,23 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app-routing.module';
-import { SharedModule } from './shared/shared.module';
-import { CoreModule } from './core/core.module';
+import { HeaderComponent } from './header/header.component';
+import { UserDetailComponent } from './user/user-detail/user-detail.component';
+import { UserComponent } from './user/user.component';
+import { DropdownDirective } from './shared/dropdown.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    UserDetailComponent,
+    UserComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
-    AppRoutingModule,
-    SharedModule,
-    CoreModule
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
