@@ -2,14 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>CynIn</title>
+    <title>Myriad Panda</title>
   </head>
   <body>
     <app-header (featureSelected)="onNavigate($event)"></app-header>
     <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <app-user></app-user>
+        <router-outlet></router-outlet>
       </div>
     </div>
   </div>

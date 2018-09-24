@@ -1,0 +1,4 @@
+/* Puts space between event.title and (event.hour and event.minute) */
+.spacing {
+  padding-bottom: 8px;
+}
