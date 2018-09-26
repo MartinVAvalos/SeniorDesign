@@ -13,10 +13,6 @@ export class HomeEventsComponent implements OnInit {
     new Event('Hackathon', 2, 30, 'We`ll be helping students learn the basics of hacking'),
   ];
 
-  getEvents() {
-    return this.events.slice();
-  }
-
   constructor() { }
 
   ngOnInit() {

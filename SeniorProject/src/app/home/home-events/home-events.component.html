@@ -2,15 +2,21 @@
   Purpose: Display list of events
   Description: Will display events's title and time event will take place. If clicked, display desription.
 -->
-
 <div class="row">
-  <div class="col-xs-6">
+
+  <div class="eventTitle">
     <a
       href="#"
       class="list-group-item clearfix defaultPointer eventText"
-      *ngFor="let event of events">
+      *ngFor="let event of events"
+      >
       <h4 class="list-group-item-heading spacing">{{ event.title}}</h4>
       <h4 class="list-group-item-heading">{{ event.hour }}:{{ event.minute }}</h4>
     </a>
   </div>
+  <!-- <div class="eventDescription">
+    <div class="list-group-item clearfix defaultPointer eventText">
+    </div>
+  </div> -->
+
 </div>

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Event } from './event.model';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',

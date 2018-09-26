@@ -2,3 +2,17 @@
 .spacing {
   padding-bottom: 8px;
 }
+
+.row {
+  display: flex;
+}
+
+.eventTitle {
+  padding-left: 2.5%;
+  width: 50%;
+}
+
+.eventDescription {
+  padding-left: 8px;
+  width: 47%;
+}
