@@ -1,21 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Event } from '../event.model';
+import { Event } from '../../shared/event.model';
+import { EventService } from './event.service';
 
 @Component({
   selector: 'app-home-events',
   templateUrl: './home-events.component.html',
-  styleUrls: ['./home-events.component.css']
+  styleUrls: ['./home-events.component.css'],
+  providers: [EventService]
 })
 export class HomeEventsComponent implements OnInit {
 
-  events: Event[] = [
-    new Event('Hackathon', 2, 30, 'We`ll be helping students learn the basics of hacking'),
-  ];
+  events: Event[];
 
-  constructor() { }
+  constructor(private eventService: EventService) { }
 
   ngOnInit() {
+    this.events = this.eventService.getEvents();
   }
 
 }

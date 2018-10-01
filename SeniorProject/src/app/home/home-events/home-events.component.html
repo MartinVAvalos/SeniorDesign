@@ -9,14 +9,19 @@
       href="#"
       class="list-group-item clearfix defaultPointer eventText"
       *ngFor="let event of events"
-      >
+      (click)="onSelected()">
       <h4 class="list-group-item-heading spacing">{{ event.title}}</h4>
       <h4 class="list-group-item-heading">{{ event.hour }}:{{ event.minute }}</h4>
     </a>
   </div>
-  <!-- <div class="eventDescription">
-    <div class="list-group-item clearfix defaultPointer eventText">
-    </div>
-  </div> -->
 
+  <span class="eventDescription">
+    <div
+      class="list-group-item clearfix defaultPointer eventText"
+      *ngFor="let event of events">
+      <h4 class="list-group-item-heading spacing">
+        Description: <br><br>
+        {{ event.description }}</h4>
+    </div>
+  </span>
 </div>

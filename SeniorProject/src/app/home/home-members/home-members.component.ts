@@ -1,22 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Member } from '../member.model';
+import { Member } from '../../shared/member.model';
+import { MemberService } from './member.service';
 
 @Component({
   selector: 'app-home-members',
   templateUrl: './home-members.component.html',
-  styleUrls: ['./home-members.component.css']
+  styleUrls: ['./home-members.component.css'],
+  providers: [MemberService]
 })
 export class HomeMembersComponent implements OnInit {
 
-  members: Member[] = [
-    new Member('Martin', 'Vera', 2, 30, 'guerovera37@icloud.com'),
-    new Member('Emmanuel',  'Esgae',  4, 19, 'red@gmail.com')
-  ];
+  members: Member[];
 
-  constructor() { }
+  constructor(private memberService: MemberService) { }
 
   ngOnInit() {
+    this.members = this.memberService.getMembers();
   }
 
 }
